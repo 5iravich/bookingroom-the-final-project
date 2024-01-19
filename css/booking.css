@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:ital,wght@0,300;0,600;0,800;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Mitr",sans-serif;
+    background-color: whitesmoke;
+}
+
+.picture-cover{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Center vertically */
+    margin: 20px 50px;
+    border-radius: 15px;
+    height: 300px;
+    background-color: #FFF2F2 ;
+    padding: 0 10px;
+}
+
+.picture-cover .start{
+    margin-right: 150px;
+    height: 100%;
+}
+
+.card {
+    width: 300px; /* Set the width of the card */
+    height: 280px; /* Set the height of the card */
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for the card */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bottomleft-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.text-white {color: rgb(255, 255, 255);}
+
+.text-white .jumbo{font-size: 32px;}
+
+.text-white .tag-red{background-color: red;}
+
+
+/* Style the bookInfo container */
+.bookInfo { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    background-color: white; /* Set a background color */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Add a border */
+}
+
+/* Style the bookDescription element */
+.bookDescription {
+    margin-left: 15%;
+    text-align: center;
+    font-size: 28px; /* Set the font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Set the text color */
+}
+
+/* Style the bookStatus element */
+.bookStatus {
+    background-color: white;
+    font-size: 14px; /* Set the font size */
+    color: #666; /* Set the text color */
+}
+
+
+.building-container{
+    margin: 10px 50px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.title-bar {
+    text-align: center;
+}
+
+.title-bar .blue{
+    color: #2196F3;
+    text-align: center;
+}
+
+.title-bar .gray{
+    color: #63B7C6;
+    text-align: center;
+}
+
+.title-bar img{
+    width: 100px;
+}
+
+/* dorms card */
+
+.air-box{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create four equal-width columns */
+    gap: 10px;
+}
+
+.standard-box{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create four equal-width columns */
+    gap: 15px;
+}
+
+.dorm-card{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    overflow: hidden;
+    background: whitesmoke;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dorm-card:hover{
+    transform: scale(1.02);
+    transition: 0.1s;
+}
+
+.dorm-card .dormitory-bg-air{
+    background: #2196F3;
+    width: 40%;
+    height: 100%;
+}
+
+.dorm-card .dormitory-bg-standard{
+    background: #63B7C6;
+    width: 40%;
+    height: 100%;
+}
+
+.dorm-card .dormitory-no{
+    margin-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.dorm-card .dorm-info{
+    width: 60%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 50px 150px 50px;
+    padding: 10px 15px;
+}
+
+.dorm-info .dormname-title{
+    font-size: 16px;
+}
+
+.dorm-card .dorm-info .btn-dorm{
+    background: #2196F3;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.dorm-card .dorm-info .btn-dorm:hover{
+    background: #1662a0;
+}
+
+
+/* Style the modal background */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    z-index: 1;
+    /* overflow: auto; */
+}
+
+/* Center the modal content vertically and horizontally */
+.modal-content{
+    background-color: #fff;
+    margin: 15% auto;
+    top: -20%;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px; /* Set a maximum width for the modal content */
+    position: relative;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+/* Style the close button (x) */
+.close {
+    position: absolute;
+    top: -17px;
+    right: 10px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red;
+    transition: 0.2s;
+}
+
+.room-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #9ED5C5;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Adjust this value to control the spacing */
+    cursor: pointer;
+  }
+
+.room-item:hover {
+    background-color: #DEF5E5;
+    transform: scale(1.02);
+    transition: 0.1s;
+}
+
+.DormTitle{
+    text-align: center;
+}
+
+#selectedDormNo{
+    text-align: center;
+}
+
+#selectedDormName{
+    color: #444;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.room-number{
+    font-size: 26px;
+}
+
+.room-price{
+    color: black;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid orange;
+}
+
+.booking-count{
+    text-align: center;
+}
+
+.bookStatus{
+    border-radius: 10px;
+    border: 1px solid #888;
+    padding: 10px;
+}
+
+.yellow {
+    font-weight: bold;
+    color: #EFB495;
+    margin-left: 5px;
+}
+
+.green {
+    font-weight: bold;
+    color: #3CCF4E;
+    margin-left: 5px;
+}
+
+.red {
+    font-weight: bold;
+    color: red;
+    margin-left: 5px;
+}
+
+.statusshow{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btnpayment{
+    font-family: inherit;
+    text-decoration: none;
+    margin-top: 5px;
+    border: 1px solid #2196F3;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: #2196F3;
+}
+
+.btnpayment:hover{
+    background-color: #1b74be;
+    transition: 0.2s;
+}
+
+.btnpayment:disabled{
+    font-family: inherit;
+    border: 1px solid whitesmoke;
+    color: #20262E;
+    background-color: #ECF9FF;
+}
+
+.statusbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickdownload{
+    color: #2196F3;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.clickdownload:hover{
+    color: #1662a0;
+    transition: 0.2s;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar{
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track{
+	background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(45deg,#1dc661,#00a79e);
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 1700px) {
+    .air-box{grid-template-columns: repeat(4, 1fr);}
+    .standard-box{grid-template-columns: repeat(4, 1fr);}
+}
+
+@media screen and (max-width: 1300px) {
+    .picture-cover {
+        margin: 20px;
+        justify-content: center;
+    }
+
+    .picture-cover .start{display: none;}
+
+    .card {
+        max-width: 100%;
+        width: 60%;
+    }
+
+    .text-white .jumbo {font-size: 20px;}
+
+    .air-box{grid-template-columns: repeat(3, 1fr);}
+    
+    .standard-box{grid-template-columns: repeat(3, 1fr);}
+
+    .modal-content {
+        top: 0%;
+        max-height: 70%;
+        overflow-y: auto;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .air-box{
+        grid-template-columns: repeat(2, 1fr); /* Create four equal-width columns */
+    }
+    
+    .standard-box{
+        grid-template-columns: repeat(2, 1fr); /* Create four equal-width columns */
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .air-box{
+        grid-template-columns: repeat(1, 1fr); /* Create four equal-width columns */
+    }
+    
+    .standard-box{
+        grid-template-columns: repeat(1, 1fr); /* Create four equal-width columns */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .picture-cover {
+        margin: 10px;
+    }
+
+    .picture-cover .start{display: none;}
+
+    .card {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .text-white .jumbo {font-size: 18px;}
+
+    .text-white .large {font-size: 12px;}
+
+    .text-white .tag-red {font-size: 10px;}
+
+    .dorm-card{
+        width: 180px;
+        height: 90px;
+    }
+
+    .dorm-card:hover{
+        transform: scale(1.02);
+        transition: 0.1s;
+    }
+    
+    .dorm-card .dormitory-bg-air{
+        background: #2196F3;
+        width: 40%;
+        height: 100%;
+    }
+    
+    .dorm-card .dormitory-bg-standard{
+        background: #63B7C6;
+        width: 40%;
+        height: 100%;
+    }
+    
+    .dorm-card .dormitory-no{font-size: 15px;}
+    
+    .dorm-card .dorm-info{
+        width: 60%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 50px 150px 50px;
+        padding: 10px 15px;
+    }
+    
+    .dorm-info .dormname-title{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    
+    .dorm-card .dorm-info .btn-dorm{
+        padding: 5px 10px;
+        border-radius: 2.5px;
+    }
+}

@@ -1,0 +1,96 @@
+<?php 
+
+    session_start();
+    require_once './config/db.php';
+
+    if (isset($_POST['register'])) {
+        $stdid = $_POST['stdid'];
+        $gender = $_POST['gender'];
+        $firstname = $_POST['firstname'];
+        $lastname = $_POST['lastname'];
+        $tel = $_POST['tel'];
+        $coemail = $_POST['coemail'];
+        $parentsname = $_POST['parentsname'];
+        $relation = $_POST['relation'];
+        $tel = $_POST['tel'];
+        $parentstel = $_POST['parentstel'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $c_password = $_POST['c_password'];
+        $urole = 'user';
+
+        if (empty($firstname)) {
+            $_SESSION['error'] = 'กรุณากรอกชื่อ';
+            header("location: ./register.php");
+        } else if (empty($lastname)) {
+            $_SESSION['error'] = 'กรุณากรอกนามสกุล';
+            header("location: ./register.php");
+        } else if (empty($email)) {
+            $_SESSION['error'] = 'กรุณากรอกอีเมล';
+            header("location: ./register.php");
+        } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $_SESSION['error'] = 'รูปแบบอีเมลไม่ถูกต้อง';
+            header("location: ./register.php");
+        } else if (!endsWith($email, "@ku.th")) {
+            $_SESSION['error'] = 'อีเมลต้องเป็นโดเมน @ku.th';
+            header("location: ./register.php");
+        } else if (empty($password)) {
+            $_SESSION['error'] = 'กรุณากรอกรหัสผ่าน';
+            header("location: ./register.php");
+        } else if (strlen($_POST['password']) < 9) {
+            $_SESSION['error'] = 'รหัสผ่านต้องมีความยาวมากกว่า 9 ตัวอักษร';
+            header("location: ./register.php");
+        } else if (empty($c_password)) {
+            $_SESSION['error'] = 'กรุณายืนยันรหัสผ่าน';
+            header("location: ./register.php");
+        } else if ($password != $c_password) {
+            $_SESSION['error'] = 'รหัสผ่านไม่ตรงกัน';
+            header("location: ./register.php");
+        } else {
+            try {
+
+                $check_email = $conn->prepare("SELECT email FROM users WHERE email = :email");
+                $check_email->bindParam(":email", $email);
+                $check_email->execute();
+                $row = $check_email->fetch(PDO::FETCH_ASSOC);
+
+                if ($row['email'] == $email) {
+                    $_SESSION['warning'] = "มีอีเมลนี้อยู่ในระบบแล้ว <a href='./index.php'>คลิ๊กที่นี่</a> เพื่อเข้าสู่ระบบ";
+                    header("location: ./register.php");
+                } else if (!isset($_SESSION['error'])) {
+                    $passwordHash = password_hash($password, PASSWORD_DEFAULT);
+                    $stmt = $conn->prepare("INSERT INTO users(stdid, gender, firstname, lastname, tel, coemail, parentsname, relation, parentstel, email, password, urole) 
+                                            VALUES(:stdid, :gender, :firstname, :lastname, :tel, :coemail, :parentsname, :relation, :parentstel, :email, :password, :urole)");
+                    $stmt->bindParam(":stdid", $stdid);
+                    $stmt->bindParam(":gender", $gender);
+                    $stmt->bindParam(":firstname", $firstname);
+                    $stmt->bindParam(":lastname", $lastname);
+                    $stmt->bindParam(":tel", $tel);
+                    $stmt->bindParam(":coemail", $coemail);
+                    $stmt->bindParam(":parentsname", $parentsname);
+                    $stmt->bindParam(":relation", $relation);
+                    $stmt->bindParam(":parentstel", $parentstel);
+                    $stmt->bindParam(":email", $email);
+                    $stmt->bindParam(":password", $passwordHash);
+                    $stmt->bindParam(":urole", $urole);
+                    $stmt->execute();
+                    $_SESSION['success'] = "สมัครสมาชิกเรียบร้อยแล้ว! <a href='./index.php' class='alert-link'>คลิ๊กที่นี่</a> เพื่อเข้าสู่ระบบ";
+                    header("location: ./register.php");
+                } else {
+                    $_SESSION['error'] = "มีบางอย่างผิดพลาด";
+                    header("location: ./register.php");
+                }
+
+            } catch(PDOException $e) {
+                echo $e->getMessage();
+            }
+        }
+    }
+    function endsWith($string, $ending) {
+        $len = strlen($ending);
+        if ($len == 0) {
+            return true;
+        }
+        return (substr($string, -$len) === $ending);
+    }
+?>

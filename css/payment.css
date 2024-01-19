@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:ital,wght@0,300;0,600;0,800;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mitr",sans-serif;
+}
+
+.paymentpage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: whitesmoke;
+    background: -webkit-linear-gradient(to right, #c0ffd4, #e5ffed);
+    background: linear-gradient(to right, #c0ffd4, #e5ffed);
+}
+
+.paymantcontainer{
+    max-width: 650px;
+    width: 100%;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.paymantcontainer h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.attitle{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.span-pay{
+    margin-left: 15px;
+}
+
+.QR{
+    border-radius: 10px;
+    width: 220px;
+}
+
+.payment-part{
+    display: flex;
+    align-items: center;
+}
+
+.payment-column {
+    float: left;
+    width: 300px;
+    margin: 5px;
+}
+
+.payment-column.center{
+    margin-top: 50px;
+}
+
+.drag-area {
+    height: 350px;
+    width: 190px;
+    border: 3px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+    border-radius: 20px;
+    /* text-align: center;
+    padding: 20px; */
+    position: relative;
+}
+
+.drag-area.active {
+    border: 2px dashed #007BFF; /* Change border color when active */
+}
+
+/* Styles for the file input */
+.filepayment {
+    display: none; /* Hide the file input */
+}
+
+.drag-area img {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 10px;
+    display: none; /* Hide the image by default */
+    position: absolute; /* Added for positioning */
+    left: 0; /* Center the image horizontally */
+    right: 0;
+    top: 0; /* Center the image vertically */
+    bottom: 0;
+    margin: auto; /* Center the image both horizontally and vertically */
+}
+
+#beforeLoad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h3.payment3{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.drag-area .iconpic{
+    font-size: 50px;
+    color: #007BFF;
+}
+
+/* Styles for the buttons and text */
+.headerpayment {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.buttonpayment {
+    color: #007BFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.supportpayment {
+    font-size: 10px;
+    color: #999;
+    margin: 10px 0 15px 0;
+}
+
+/* Styles for alerts */
+.alert {
+    margin-top: 10px;
+}
+
+/* Styles for form buttons */
+.Btnformpay {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btnUpPay {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnUpPay:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the back button */
+.back-button {
+    color: #606060;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    color: #333;
+    transition: 0.2s;
+}
+
+.alert.alert-danger{
+    text-align: center;
+    font-size: 10px;
+      color: #ba1c1c;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    padding: 5px;
+      border: 1px solid #dc3545;
+      background-color: #ffaabb;
+  }
+  
+  .alert.alert-success{
+    text-align: center;
+    font-size: 10px;
+      color: #1cba21;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    padding: 5px;
+      border: 1px solid #35dc59;
+      background-color: #aaffc4;
+  }
+
+  /* custom scrollbar */
+
+  ::-webkit-scrollbar{
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track{
+	background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(45deg,#1dc661,#00a79e);
+	border-radius: 10px;
+}

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:ital,wght@0,300;0,600;0,800;1,300&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Mitr', sans-serif;
+    background-color: whitesmoke;
+}
+
+.confirmTicket{
+    margin: 5% 25%;
+    padding: 20px;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.paymentCard{
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.condition{
+    text-align: justify;
+    font-size: 10px;
+}
+
+.light{
+    color: goldenrod;
+}
+
+.docinfo{
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.bluelight{
+    text-decoration: none;
+    font-size: 10px;
+    color: #2196F3;
+}
+
+.col-payment{
+    display: flex;   
+}
+
+.paymentInfo{
+    font-size: 14px;
+    margin-top: 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 10px;
+    width: 40%;
+}
+
+.confirmrule{
+    font-size: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 60%;
+}
+
+p{
+    color: rgb(109, 109, 109);
+}
+
+.col-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.bookbtngreen{
+    font-family: inherit;
+    padding: 10px;
+    width: 120px;
+    margin: 5px;
+    border: none;
+    color: white;
+    background-color: #59e25d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bookbtngreen:hover{
+    background-color: #3e9f41;
+}
+
+.bookbtnred{
+    font-family: inherit;
+    padding: 10px;
+    width: 120px;
+    margin: 5px;
+    border: none;
+    background-color: #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bookbtnred:hover{
+    background-color: #bbb;
+}
+
+/* custom scrollbar */
+
+::-webkit-scrollbar{
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track{
+	background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(45deg,#1dc661,#00a79e);
+	border-radius: 10px;
+}
