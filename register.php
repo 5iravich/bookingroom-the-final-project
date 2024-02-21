@@ -7,7 +7,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+        <link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
         <title>KU-KPS Dormitory</title>
         <link rel="stylesheet" type="text/css" href="./css/register.css">
         <link href="https://fonts.googleapis.com/css?family=Mitr:600&display=swap" rel="stylesheet">
@@ -15,10 +15,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <img class="wave" src="https://sv1.picz.in.th/images/2023/10/27/ddsU8rf.png">
+        <img class="wave" src="./img/wave.png">
         <div class="container">
             <div class="img">
-                <img src="https://sv1.picz.in.th/images/2023/10/27/ddsUqbN.png">
+                <img src="./img/welcome.png">
             </div>
             <div class="login-content">
                 <form id="bug" action="./register_db.php" method="post">

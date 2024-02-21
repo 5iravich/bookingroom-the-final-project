@@ -94,7 +94,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+	<link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
 	<title>Profile</title>
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="./css/user.css">
@@ -106,7 +106,7 @@
 		<nav>
 			<ul class="nav-list">
 				<li class="nav-item">
-					<a href="./user.php"><img src="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png" alt="Logo"></a>
+					<a href="./user.php"><img src="./img/logo.png" alt="Logo"></a>
 				</li>
 				<li class="nav-item-a">
 					<a href="./user.php">หน้าหลัก</a>
@@ -155,7 +155,7 @@
 					<a href="user.php" class="btn btn-secondary"><i class='bx bx-arrow-back' ></i> ย้อนกลับ</a>
 				</div>
 					<div class="icon-container">
-					<img class="profile-icon"src="https://sv1.picz.in.th/images/2023/10/27/ddsUtaZ.png" alt="profile">				
+					<img class="profile-icon"src="./img/profile.png" alt="profile">				
 				</div>
 				<h1 class="card-title">โปรไฟล์ของฉัน</h1><br>
 

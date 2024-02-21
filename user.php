@@ -12,7 +12,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+		<link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
 		<title>Services</title>
 		<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 		<link rel="stylesheet" type="text/css" href="./css/user.css">
@@ -24,7 +24,7 @@
 		<nav>
 			<ul class="nav-list">
 				<li class="nav-item">
-					<a href="./user.php"><img src="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png" alt="Logo"></a>
+					<a href="./user.php"><img src="./img/logo.png" alt="Logo"></a>
 				</li>
 				<li class="nav-item-a active">
 					<a href="./user.php">หน้าหลัก</a>
@@ -118,7 +118,7 @@
 			</div>
 			<div class="card">
 				<a class="box" href="./user-profile.php">
-					<img src="https://sv1.picz.in.th/images/2023/10/27/ddsUtaZ.png" alt="profile">
+					<img src="./img/profile.png" alt="profile">
 					<div class="content">	
 						<h2>01</h2>
 						<h3>โปรไฟล์</h3>
@@ -127,7 +127,7 @@
 			</div>
 			<div class="card">
 				<a class="box" href="./user-booking.php">
-					<img src="https://sv1.picz.in.th/images/2023/10/27/ddsU1zI.png" alt="booking">
+					<img src="./img/Booking.png" alt="booking">
 					<div class="content">
 						<h2>02</h2>
 						<h3>จองหอพักนิสิต</h3>
@@ -136,7 +136,7 @@
 			</div>
 			<div class="card">
 				<a class="box" href="./user-maintenance.php">
-					<img src="https://sv1.picz.in.th/images/2023/10/27/ddsUgWe.png" alt="maintain">
+					<img src="./img/maintain.png" alt="maintain">
 					<div class="content">
 						<h2>03</h2>
 						<h3>แจ้งซ่อมบำรุง</h3>

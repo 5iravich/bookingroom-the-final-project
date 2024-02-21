@@ -97,4 +97,4 @@ function endsWith($string, $ending) {
     }
     return (substr($string, -$len) === $ending);
 }
-?>
+

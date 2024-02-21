@@ -84,7 +84,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+	<link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <title>Profile</title>
 	<link rel="stylesheet" type="text/css" href="./css/technician.css">
@@ -96,7 +96,7 @@
 		<nav>
 			<ul class="nav-list">
 				<li class="nav-item">
-					<a href="./technician.php"><img src="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"></img></a>
+					<a href="./technician.php"><img src="./img/logo.png"></img></a>
 				</li>
 				<li class="nav-item-a">
 					<a href="./technician.php">หนัาหลัก</a>

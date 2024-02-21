@@ -48,7 +48,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+	<link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
 	<title>Reservation</title>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="./css/admin.css">
@@ -61,7 +61,7 @@
 <body>
 	<section class="sidebar" id="sidebar">
 		<a href="./admin.php" class="brand">
-            <img src="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png" width="25px" alt="Logo">
+            <img src="./img/logo.png" width="25px" alt="Logo">
 			<span class="text">DORMITORY</span>
 		</a>
 		<ul class="side-menu top">

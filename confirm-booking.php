@@ -61,7 +61,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+    <link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
     <title>Confirm booking</title>
     <link rel="stylesheet" type="text/css" href="./css/confirmBook.css">
     <link href="https://fonts.googleapis.com/css?family=Mitr:600&display=swap" rel="stylesheet">

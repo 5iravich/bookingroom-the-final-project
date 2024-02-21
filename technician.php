@@ -12,7 +12,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+	<link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
 	<title>Menus</title>
 	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="./css/technician.css">
@@ -24,7 +24,7 @@
 		<nav>
 			<ul class="nav-list">
 				<li class="nav-item">
-					<a href="./technician.php"><img src="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"></img></a>
+					<a href="./technician.php"><img src="./img/logo.png"></img></a>
 				</li>
 				<li class="nav-item-a active">
 					<a href="./technician.php">หนัาหลัก</a>
@@ -104,7 +104,7 @@
 		<div class="container">
 			<div class="card">
 				<a class="box" href="./technician-profile.php">
-					<img src="https://sv1.picz.in.th/images/2023/10/27/ddsUtaZ.png" alt="profile">
+					<img src="./img/profile.png" alt="profile">
 					<div class="content">	
 						<h2>01</h2>
 						<h3>โปรไฟล์</h3>
@@ -113,7 +113,7 @@
 			</div>
 			<div class="card">
 				<a class="box" href="./technician-tasks.php">
-					<img src="https://sv1.picz.in.th/images/2023/10/27/ddsU0O9.png" alt="tasks">
+					<img src="./img/work.png" alt="tasks">
 					<div class="content">	
 						<h2>02</h2>
 						<h3>งานของฉัน</h3>
@@ -123,7 +123,7 @@
 
 			<div class="card">
 				<a class="box" href="./technician-history.php">
-					<img src="https://sv1.picz.in.th/images/2023/10/27/ddsUfKz.png" alt="history">
+					<img src="./img/10.png" alt="history">
 					<div class="content">
 						<h2>03</h2>
 						<h3>ประวัติงานซ่อมบำรุง</h3>
@@ -133,7 +133,7 @@
 
 			<div class="card">
 				<a class="box" href="./technician-list-withdrawals.php">
-					<img src="https://sv1.picz.in.th/images/2023/10/27/ddsU46a.png" alt="withdrawals">
+					<img src="./img/bar.png" alt="withdrawals">
 					<div class="content">
 						<h2>04</h2>
 						<h3>ประวัติการเบิกวัสดุอุปกรณ์</h3>
@@ -143,7 +143,7 @@
 
 			<div class="card">
 				<a class="box" href="./technician-summary.php">
-					<img src="https://sv1.picz.in.th/images/2023/10/27/ddsUzxf.png" alt="summary">
+					<img src="./img/Chart.png" alt="summary">
 					<div class="content">
 						<h2>05</h2>
 						<h3>สรุปภาพรวม</h3>

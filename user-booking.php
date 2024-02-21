@@ -58,7 +58,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+        <link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
         <title>Room Booking</title>
         <link rel="stylesheet" type="text/css" href="./css/user.css">
         <link rel="stylesheet" type="text/css" href="./css/booking.css">
@@ -70,7 +70,7 @@
         <nav>
 			<ul class="nav-list">
 				<li class="nav-item">
-					<a href="./user.php"><img src="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png" alt="Logo"></a>
+					<a href="./user.php"><img src="./img/logo.png" alt="Logo"></a>
 				</li>
                 <li class="nav-item-a">
 					<a href="./user.php">หน้าหลัก</a>
@@ -114,9 +114,9 @@
 			</div>
 		</nav>
     <div class="picture-cover">
-        <img src="https://sv1.picz.in.th/images/2023/10/27/ddsUxev.png" class="start" alt="cover"/>
+        <img src="./img/start.png" class="start" alt="cover"/>
         <div class="card">
-            <div class="card-img" style="background-image: url('https://sv1.picz.in.th/images/2023/10/27/ddsUKxP.md.jpeg');">
+            <div class="card-img" style="background-image: url('./img/air.jpg');">
                 <div class="bottomleft-container">
                     <p class="text-white">
                         <span class="jumbo"><b>แอร์</b></span><br>
@@ -128,7 +128,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-img" style="background-image: url('https://sv1.picz.in.th/images/2023/10/27/ddsUiKl.jpeg');">
+            <div class="card-img" style="background-image: url('./img/normal.jpg');">
                 <div class="bottomleft-container">
                      <p class="text-white">
                         <span class="jumbo"><b>ธรรมดา</b></span><br>
@@ -213,7 +213,7 @@
     ?>
     <div class="building-container">
         <div class="title-bar">
-            <img src="https://sv1.picz.in.th/images/2023/10/27/ddsURPk.png" alt="Air Conditioner">
+            <img src="./img/Snow.png" alt="Air Conditioner">
             <h2 class="blue">Air Conditioner</h2>
         </div>
         <div class="air-box">
@@ -241,7 +241,7 @@
     </div>
     <div class="building-container">
         <div class="title-bar">
-            <img src="https://sv1.picz.in.th/images/2023/10/27/ddsU5aV.png" alt="Stardard">
+            <img src="./img/Wind.png" alt="Stardard">
             <h2 class="gray">Standard</h2>
         </div>
         <div class="standard-box">

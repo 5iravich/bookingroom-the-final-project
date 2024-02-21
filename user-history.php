@@ -22,7 +22,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/svg" href="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png"/>
+	<link rel="shortcut icon" type="image/svg" href="./img/logo.png"/>
 	<title>My History</title>
 	<link rel="stylesheet" type="text/css" href="./css/user.css">
 	<link rel="stylesheet" type="text/css" href="./css/table.css">
@@ -35,7 +35,7 @@
 <nav>
 			<ul class="nav-list">
 				<li class="nav-item">
-					<a href="./user.php"><img src="https://sv1.picz.in.th/images/2023/10/27/ddsUZnt.png" alt="Logo"></a>
+					<a href="./user.php"><img src="./img/logo.png" alt="Logo"></a>
 				</li>
 				<li class="nav-item-a">
 					<a href="./user.php">หน้าหลัก</a>
